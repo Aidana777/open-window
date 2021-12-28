@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework-39</title>
+    <link rel="stylesheet" href="/modal.css" />
+  </head>
+  <body>
+    <button id="open">Open modal</button>
+    <div class="modal-container" id="modal-container">
+      <div class="modal">
+        <h1>Here I am Now close me</h1>
+        <button id="close_mood">close me!</button>
+      </div>
+    </div>
+    <script src="/modal.js">
+      const openmodal = document.getElementById('open');
+      const modal_container = document.getElementById('modal-container');
+      const close = document.getElementById('close_mood');
+      
+      open.addEventListener('click', ()=>{
+        modal_container.classList.add('show');
+      });
+      close.addEventListener('click', ()=>{
+        modal_container.classList.add('show');
+      });
+    </script>
+  </body>
+</html>
